@@ -34,5 +34,4 @@ Apple Watch可以通过 Digital Touch 向其他 Apple Watch 用户发送 Sketch�
 WatchKit：WatchKit SDK 让开发人员能为Apple Watch 量身打造出全新的各种App体验。
 手表内置UBER。并且手表可以直接解锁房间门，Passbook作为登机牌，可以远程看视频、图像等。
 中国应用：微信、微博、支付宝、美拍、携程等，不过适配Apple Watch 之一的支付宝钱包仅保留了余额宝、付款码、汇率换算三个功能。而其他应用也将相应去繁为简，只保留更为适合穿戴设备的功能。
-WATCHAPP运行原理
 
