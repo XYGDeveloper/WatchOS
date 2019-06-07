@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14490.70" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14490.21"/>
+    </dependencies>
+    <scenes>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="u12-8D-taf">
+            <objects>
+                <notificationController id="ash-hJ-gkF">
+                    <items>
+                        <label alignment="left" text="Alert Label" id="WLO-AN-NJy"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" id="sHm-LM-PLt"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="WLO-AN-NJy" id="qo8-bz-zyX"/>
+                        <segue destination="yNh-Nt-LbV" kind="relationship" relationship="dynamicNotificationInterface" id="gyW-kc-ozS"/>
+                        <segue destination="zwu-9e-wu0" kind="relationship" relationship="dynamicInteractiveNotificationInterface" id="0HB-pX-oxC"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="233" y="0.0"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="WatchOS_06_WatchKit_App" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="220" y="345"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label alignment="left" text="Alert Label" numberOfLines="0" id="IdU-wH-bcW"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
+                        <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
+                        <segue destination="eXb-UN-Cd0" kind="relationship" relationship="dynamicInteractiveNotificationInterface" id="mpB-YA-K8N"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="220" y="643"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="ZPc-GJ-vnh">
+            <objects>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="WatchOS_06_WatchKit_App" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="468" y="643"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="Niz-AI-uX2">
+            <objects>
+                <controller id="eXb-UN-Cd0" customClass="NotificationController" customModule="WatchOS_06_WatchKit_App" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="468" y="345"/>
+        </scene>
+        <!--Dynamic Notification Interface Controller-->
+        <scene sceneID="ips-gk-5eJ">
+            <objects>
+                <controller id="yNh-Nt-LbV"/>
+            </objects>
+            <point key="canvasLocation" x="533" y="0.0"/>
+        </scene>
+        <!--Dynamic Interactive Notification Interface Controller-->
+        <scene sceneID="kul-al-TbE">
+            <objects>
+                <controller id="zwu-9e-wu0"/>
+            </objects>
+            <point key="canvasLocation" x="533" y="-300"/>
+        </scene>
+    </scenes>
+</document>
